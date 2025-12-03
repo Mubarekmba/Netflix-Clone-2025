@@ -1,0 +1,76 @@
+/* OUTER FOOTER */
+.footer_outer_container {
+  background-color: #181818; /* Netflix footer black */
+  color: #737373; /* Netflix grey text */
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+
+/* INNER FOOTER */
+.footer_inner_container {
+  width: 80%; /* Netflix width */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* SOCIAL ICONS */
+.footer_icons {
+  display: flex;
+  gap: 20px;
+  color: #fff;
+  font-size: 24px;
+}
+
+/* FOOTER LINK COLUMNS */
+.footer_data {
+  display: flex;
+  justify-content: flex-start;
+  gap: 80px; /* space between columns */
+  margin-top: 10px;
+}
+
+.footer_data ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_data ul li {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer_data ul li:hover {
+  color: #b3b3b3; /* Netflix hover grey */
+}
+
+/* SERVICE CODE BUTTON */
+.service_code {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #737373;
+  padding: 6px 10px;
+  width: fit-content;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.service_code:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+/* COPYRIGHT */
+.copy-write {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #737373;
+}
