@@ -1,74 +1,80 @@
-/* OUTER FOOTER */
+/* OUTER FOOTER CONTAINER */
 .footer_outer_container {
-  background-color: #181818; /* Netflix footer black */
-  color: #737373; /* Netflix grey text */
+  background-color: #181818; /* Netflix-style dark footer */
+  color: #737373; /* Light grey text */
   display: flex;
   justify-content: center;
-  padding-top: 40px;
-  padding-bottom: 20px;
+
+  padding: 40px 0 20px; /* Top & bottom spacing */
   font-size: 14px;
 }
 
-/* INNER FOOTER */
+/* INNER FOOTER WRAPPER  */
 .footer_inner_container {
-  width: 80%; /* Netflix width */
+  width: 80%; /* Wider, more Netflix-accurate */
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 20px; /* Space between sections */
 }
 
-/* SOCIAL ICONS */
+/* SOCIAL MEDIA ICONS  */
 .footer_icons {
   display: flex;
   gap: 20px;
-  color: #fff;
-  font-size: 24px;
+  color: #fff; /* White icons for contrast */
+  font-size: 24px; /* Icon size control */
 }
 
-/* FOOTER LINK COLUMNS */
+/* FOOTER LINK COLUMNS  */
 .footer_data {
   display: flex;
-  justify-content: flex-start;
-  gap: 80px; /* space between columns */
+  justify-content: flex-start; /* Keep columns aligned left */
+  gap: 80px; /* Space between each column */
   margin-top: 10px;
 }
 
+/* UL inside each column */
 .footer_data ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 0;
+  gap: 12px; /* Vertical space between items */
   margin: 0;
+  padding: 0;
 }
 
+/* Individual list items */
 .footer_data ul li {
   cursor: pointer;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease; /* Smooth hover animation */
 }
 
+/* Hover effect for footer links */
 .footer_data ul li:hover {
   color: #b3b3b3; /* Netflix hover grey */
 }
 
-/* SERVICE CODE BUTTON */
+/* SERVICE CODE BUTTON   */
 .service_code {
   display: inline-flex;
   align-items: center;
+
   border: 1px solid #737373;
   padding: 6px 10px;
   width: fit-content;
+
   cursor: pointer;
   margin-top: 10px;
   font-size: 13px;
 }
 
+/* Hover effect */
 .service_code:hover {
   color: #fff;
   border-color: #fff;
 }
 
-/* COPYRIGHT */
+/* COPYRIGHT TEXT   */
 .copy-write {
   font-size: 12px;
   margin-top: 5px;

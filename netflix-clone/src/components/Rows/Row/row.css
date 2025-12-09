@@ -1,0 +1,42 @@
+/* Container for each row section */
+.row {
+  margin-left: 20px;
+  color: white;
+}
+
+/* Horizontal scroll container holding all movie posters */
+.row__posters {
+  display: flex;
+  overflow-y: hidden; /* Prevent vertical scroll */
+  overflow-x: scroll; /* Allow horizontal scrolling */
+  padding: 20px;
+}
+
+/* Hide scrollbar (Chrome / Safari) */
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+/* Default movie poster style */
+.row__poster {
+  width: 100%;
+  object-fit: contain; /* Keep aspect ratio */
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+/* Hover zoom for small posters */
+.row__poster:hover {
+  transform: scale(1.08);
+}
+
+/* Large poster style (used for Netflix originals row) */
+.row__posterLarge {
+  max-height: 250px;
+}
+
+/* Slightly larger hover zoom for large posters */
+.row__posterLarge:hover {
+  transform: scale(1.09);
+}
